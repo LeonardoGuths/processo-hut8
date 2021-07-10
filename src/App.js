@@ -1,13 +1,15 @@
-import { useEffect, useState } from 'react'
 import './App.css';
-import Contador from './components/Contador'
+import Sidebar from './components/Sidebar'
 
 const App = () => {
-  const [contador, setContador] = useState(0)
 
-  useEffect(() => {
-    document.title = `Você clicou ${contador} vezes`
-  })
+  const usuario = [
+    {
+      "name": "Fausto Silva",
+      "course": "Ciência da Computação",
+      "avatar": "https://i.imgur.com/aU48TWI.jpg"
+    }
+  ]
 
   const atividades = [
     {
@@ -26,11 +28,19 @@ const App = () => {
 
   return (
     <div className="App">
-        <Contador contador={contador} />
-        <button onClick={() => setContador(contador + 1)}>Incrementar</button>
-        {atividades.map(atividade => {
-          return <div>{atividade.course} <img src={atividade.image} width="300"></img></div>
-        })}
+      <div className="Container">
+        
+        <div className="Sidebar">
+        <Sidebar usuario={usuario}/>
+        </div>
+
+        <div className="Content">
+          {atividades.map(atividade => {
+            return <div>{atividade.course} <img src={atividade.image} width="300"></img></div>
+          })}
+        </div>
+
+      </div>
     </div>
   );
 }

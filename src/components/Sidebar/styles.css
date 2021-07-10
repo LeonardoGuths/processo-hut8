@@ -1,0 +1,31 @@
+.Sidebar .Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background: #FAFAFA;
+    padding: 30px;
+}
+
+.Sidebar .SidebarHead {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    margin-top: 20px;
+    align-items: center;
+    color: #727272;
+}
+.Sidebar img {
+    border-radius: 90px;
+    margin: 15px;
+}
+.Sidebar .SidebarHead h1 {
+    font-weight: bold;
+    font-size: 22px;
+    margin: 5px;
+}
+
+.Sidebar .SidebarHead h2 {
+    font-weight: normal;
+    font-size: 15px;
+}
