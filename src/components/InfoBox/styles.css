@@ -1,0 +1,45 @@
+.InfoBox {
+    background: #f6f6f6;
+    padding: 10px;
+    padding-right: 25px;
+    border-radius: 20px;
+    margin-right: 35px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 90px;
+}
+
+.InfoBox .Texts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    
+    padding-right: 50px;
+}
+
+.InfoBox .ImageIcon {
+    display: flex;
+    padding: 15px;
+    background: #ffffff;
+    border-radius: 100px;
+    width: 58px;
+    height: 58px;
+    align-items: center;
+    justify-content: center;
+}
+
+.InfoBox .Texts h1 {
+    color: #595959;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.InfoBox .Texts h2 {
+    color: #a5a5a5;
+    font-weight: bold;
+    font-size: 12px;
+}

@@ -6,7 +6,29 @@
     padding: 30px;
 }
 
-.Sidebar .SidebarHead {
+.Sidebar a {
+    color: inherit;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.Sidebar img {
+    border-radius: 90px;
+    margin: 15px;
+}
+
+.Sidebar h1 {
+    font-weight: bold;
+    font-size: 22px;
+    margin: 5px;
+}
+
+.Sidebar h2 {
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.Sidebar .Container .ProfileInfo {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,17 +37,14 @@
     align-items: center;
     color: #727272;
 }
-.Sidebar img {
-    border-radius: 90px;
-    margin: 15px;
-}
-.Sidebar .SidebarHead h1 {
-    font-weight: bold;
-    font-size: 22px;
-    margin: 5px;
-}
 
-.Sidebar .SidebarHead h2 {
-    font-weight: normal;
-    font-size: 15px;
+.Sidebar .Container .Links {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 50px;
+    margin-top: 20px;
+    align-items: flex-start;
+    color: #727272;
+    font-size: 22px;
 }

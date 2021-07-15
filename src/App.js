@@ -1,5 +1,6 @@
 import './App.css';
 import Sidebar from './components/Sidebar'
+import Resumo from './components/Resumo'
 
 const App = () => {
 
@@ -8,6 +9,14 @@ const App = () => {
       "name": "Fausto Silva",
       "course": "Ciência da Computação",
       "avatar": "https://i.imgur.com/aU48TWI.jpg"
+    }
+  ]
+
+  const overview = [
+    {
+      "enrolledCourses": 2,
+      "nextActivities": 2,
+      "onlineStudents": 785
     }
   ]
 
@@ -35,9 +44,15 @@ const App = () => {
         </div>
 
         <div className="Content">
-          {atividades.map(atividade => {
-            return <div>{atividade.course} <img src={atividade.image} width="300"></img></div>
-          })}
+          <h1>Resumo</h1>
+          <div className="Resumo">
+            <Resumo/>
+          </div>
+          <br></br>
+          <h1>Próximas Atividades</h1>
+          <div className="ProximasAtividades">
+
+          </div>
         </div>
 
       </div>

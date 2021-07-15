@@ -20,6 +20,21 @@
 .Container .Content {
   background: white;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 100px;
+}
+
+.Container .Content h1 {
+  font-size: 26px;
+  font-weight: bold;
+  color: #555555;
+}
+
+.Container .Content .Resumo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 25px;
 }
