@@ -4,4 +4,5 @@ Esse aplicativo foi gerado utilizando [Create React App](https://github.com/face
 
 ## O projeto
 
-O workshop do [processo seletivo para desenvolvedores frontend](https://github.com/HutEightJr/selecao-frontend/) está disponível e documentado no [GitHub da empresa](https://github.com/HutEightJr).
+A ideia deste projeto é do workshop para o [processo seletivo para desenvolvedores frontend](https://github.com/HutEightJr/selecao-frontend/), que está disponível e documentado no [GitHub da empresa](https://github.com/HutEightJr).
+
