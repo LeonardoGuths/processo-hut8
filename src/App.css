@@ -34,7 +34,17 @@
 
 .Container .Content .Resumo {
   display: flex;
+  flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
-  padding: 25px;
+  padding: 5px;
+  margin-top: 15px;
+  margin-bottom: 60px;
+}
+
+.Container .Content .ProximasAtividades {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  margin-top: 15px;
 }

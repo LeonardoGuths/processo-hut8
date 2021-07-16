@@ -1,6 +1,7 @@
 import './App.css';
 import Sidebar from './components/Sidebar'
 import Resumo from './components/Resumo'
+import Activity from './components/Activity'
 
 const App = () => {
 
@@ -35,6 +36,25 @@ const App = () => {
     }
 ]
 
+
+  const atividade1 = [
+    {
+        "course": "Algoritmos e Programação",
+        "title": "Enviar arquivo Peter Smokes",
+        "image": "https://i.imgur.com/aadwyfC.jpg",
+        "deadline": "10/10/20"
+    }
+]
+
+  const atividade2 = [
+    {
+      "course": "Projeto de Banco de Dados",
+      "title": "Enviar o esquema MySQL",
+      "image": "https://i.imgur.com/RgQrlAS.jpg",
+      "deadline": "10/10/20"
+  }
+]
+
   return (
     <div className="App">
       <div className="Container">
@@ -48,10 +68,11 @@ const App = () => {
           <div className="Resumo">
             <Resumo/>
           </div>
-          <br></br>
+          
           <h1>Próximas Atividades</h1>
           <div className="ProximasAtividades">
-
+            <Activity content={atividade1}/>
+            <Activity content={atividade2}/>
           </div>
         </div>
 

@@ -1,0 +1,48 @@
+.Activity {
+    background: #fcfcfc;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    margin-right: 35px;
+}
+.Activity img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.Activity .ImageIcon {
+    border-radius: 20px;
+}
+
+.Activity .Texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px;
+    padding-top: 5px;
+    padding-right: 45px;
+}
+
+.Activity .Texts h1 {
+    color: #4b4b4b;
+    font-size: 12px;
+    font-weight: normal;
+    padding-bottom: 7px;
+}
+
+.Activity .Texts h2 {
+    color: #737373;
+    font-size: 10px;
+    font-weight: bold;
+    padding-bottom: 7px;
+}
+
+.Activity .Texts h3 {
+    color: #8e8e8e;
+    font-size: 8px;
+    font-weight: normal;
+    padding-bottom: 7px;
+}
