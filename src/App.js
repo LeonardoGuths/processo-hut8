@@ -46,12 +46,12 @@ const App = () => {
       <div className="Content">
         <h1>Resumo</h1>
         <div className="Resumo">
-          <Resumo conteudo={user.overview}/>
+          <Resumo content={user?.overview}/>
         </div>
         
         <h1>Próximas Atividades</h1>
         <div className="ProximasAtividades">
-          {user.nextActivities.map(info => <Activity content={info}/>)}
+          {user?.nextActivities?.map(info => <Activity content={info}/>)}
         </div>
       </div>
     },
@@ -60,40 +60,6 @@ const App = () => {
       main: () => <h1>Courses</h1>
     }
   ]
-
-  const atividades = [
-    {
-        "course": "Algoritmos e Programação",
-        "title": "Enviar arquivo Peter Smokes",
-        "image": "https://i.imgur.com/aadwyfC.jpg",
-        "deadline": "10/10/20"
-    },
-    {
-        "course": "Projeto de Banco de Dados",
-        "title": "Enviar o esquema MySQL",
-        "image": "https://i.imgur.com/RgQrlAS.jpg",
-        "deadline": "10/10/20"
-    }
-]
-
-
-  const atividade1 = [
-    {
-        "course": "Algoritmos e Programação",
-        "title": "Enviar arquivo Peter Smokes",
-        "image": "https://i.imgur.com/aadwyfC.jpg",
-        "deadline": "10/10/20"
-    }
-]
-
-  const atividade2 = [
-    {
-      "course": "Projeto de Banco de Dados",
-      "title": "Enviar o esquema MySQL",
-      "image": "https://i.imgur.com/RgQrlAS.jpg",
-      "deadline": "10/10/20"
-  }
-]
 
   return (
     <div className="App">
