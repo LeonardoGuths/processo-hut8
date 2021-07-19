@@ -5,11 +5,11 @@ const InfoBox = props => {
     return (
         <div className="InfoBox">
             <div className ="Texts">
-                <h1>{props.content.map(numero => numero.number)}</h1>
-                <h2>{props.content.map(texto => texto.text)}</h2>
+                <h1>{props.content.number}</h1>
+                <h2>{props.content.text}</h2>
             </div>
             <div className="ImageIcon">
-                <img src={props.content.map(icon => icon.image)}></img>
+                <img src={props.content.image} alt={props.content.text}></img>
             </div>
         </div>
     )

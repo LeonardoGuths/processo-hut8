@@ -5,12 +5,12 @@ const Activity = props => {
     return (
         <div className="Activity">
             <div className="ImageIcon">
-                <img src={props.content.map(icon => icon.image)} height="140" width="235"></img>
+                <img src={props.content.image} height="140" width="235" alt={props.content.course}></img>
             </div>
             <div className="Texts">
-                <h2>{props.content.map(curso => curso.course)}</h2>
-                <h1>{props.content.map(titulo => titulo.title)}</h1>
-                <h3>{props.content.map(data => data.deadline)}</h3>
+                <h2>{props.content.course}</h2>
+                <h1>{props.content.title}</h1>
+                <h3>{props.content.deadline}</h3>
             </div>
         </div>
     )

@@ -1,18 +1,19 @@
 import React from 'react'
 import './styles.css'
+import { BrowserRouter as Link } from 'react-router-dom'
 
 const Sidebar = props => {
     return (
         <div className="Container">
             <div className="ProfileInfo">
-                    <img src={props.usuario.map(img => img.avatar)} width="100"></img>
-                    <h1>{props.usuario.map(nome => nome.name)}</h1>
-                    <h2>{props.usuario.map(curso => curso.course)}</h2>
+                <img src={props.usuario.avatar} width="100" alt="avatar"></img>
+                <h1>{props.usuario.name}</h1>
+                <h2>{props.usuario.course}</h2>                    
             </div>
             <div className="Links">
                 <h1>Dashboard</h1>
                 <br></br>
-                <a href="www.google.com.br">Meus cursos</a>
+                <p><Link to="/courses">Meus cursos</Link></p>
             </div>
         </div>
     )
