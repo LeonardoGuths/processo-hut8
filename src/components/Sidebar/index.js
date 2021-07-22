@@ -1,6 +1,6 @@
 import React from 'react'
 import './styles.css'
-import { BrowserRouter as Link } from 'react-router-dom'
+import SidebarLinks from '../SidebarLinks'
 
 const Sidebar = props => {
     return (
@@ -11,9 +11,7 @@ const Sidebar = props => {
                 <h2>{props.usuario.course}</h2>                    
             </div>
             <div className="Links">
-                <h1>Dashboard</h1>
-                <br></br>
-                <p><Link to="/courses">Meus cursos</Link></p>
+                <SidebarLinks/>
             </div>
         </div>
     )

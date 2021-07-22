@@ -38,6 +38,24 @@ const App = () => {
     getCoursesData()
   }, [])
 
+  const resumoDashboard = [
+    {
+      "text": "Cursos matriculados",
+      "number": `${user?.overview?.enrolledCourses}`,
+      "image": "https://imgur.com/nL6NPkU.png"
+    },
+    {
+      "text": "Atividades próximas",
+      "number": `${user?.overview?.nextActivities}`,
+      "image": "https://imgur.com/Zf21doB.png"
+    },
+    {
+      "text": "Alunos online",
+      "number": `${user?.overview?.onlineStudents}`,
+      "image": "https://imgur.com/xpip104.png"
+    }
+  ]
+
   const routes = [
     {
       path: '/',
@@ -46,7 +64,7 @@ const App = () => {
       <div className="Content">
         <h1>Resumo</h1>
         <div className="Resumo">
-          <Resumo content={user?.overview}/>
+          <Resumo content={resumoDashboard}/>
         </div>
         
         <h1>Próximas Atividades</h1>
@@ -57,7 +75,13 @@ const App = () => {
     },
     {
       path: '/courses',
-      main: () => <h1>Courses</h1>
+      main: () =>
+      <div className="Content">
+        <h1>Meus cursos</h1>
+        <div className="MeusCursos">
+          {courses?.map(info => <Activity content={info}/>)}
+        </div>
+      </div>
     }
   ]
 

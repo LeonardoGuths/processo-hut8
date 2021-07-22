@@ -48,3 +48,10 @@
   padding: 5px;
   margin-top: 15px;
 }
+
+.Container .Content .MeusCursos {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 5px;
+  margin-top: 15px;
+}
