@@ -4,7 +4,7 @@ import Sidebar from './components/Sidebar'
 import Resumo from './components/Resumo'
 import Activity from './components/Activity'
 import { getUser , getCourses } from './services/requests'
-import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom'
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 
 
 
@@ -87,22 +87,14 @@ const App = () => {
 
   return (
     <div className="App">
+    <Router>
       <div className="Container">
         
         <div className="Sidebar">
         <Sidebar usuario={user}/>
         </div>
 
-        <div className="Testes">
-          <Router>
-            <ul>
-              <li>
-                <Link to="/">dashboard test</Link>
-              </li>
-              <li>
-                <Link to="/courses">courses test</Link>
-              </li>
-            </ul>
+        <div className="Content">
             <Switch>
               {routes.map((route, i) => (
                 <Route 
@@ -113,10 +105,10 @@ const App = () => {
                 />
               ))}
             </Switch>
-          </Router>
         </div>
 
       </div>
+    </Router>
     </div>
   );
 }
