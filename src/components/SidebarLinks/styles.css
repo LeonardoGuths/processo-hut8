@@ -3,19 +3,20 @@
 }
 
 .SidebarLinks li {
-    padding-bottom: 0px;
+    padding: 5px;
+    padding-bottom: 25px;
 }
 
-.SidebarLinks h1 {
+.SidebarLinks .sidebar-navlink {
     color: #6a6a6a;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 18px;
     margin: 5px;
 }
 
-.SidebarLinks h2 {
+.SidebarLinks .sidebar-navlink-active {
     color: #6a6a6a;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 18px;
     margin: 5px;
 }
