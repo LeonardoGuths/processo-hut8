@@ -50,11 +50,3 @@
   margin-top: 15px;
   column-gap: 35px;
 }
-
-.Container .Content .MeusCursos {
-  display: flex;
-  flex-direction: row-reverse;
-  padding: 5px;
-  margin-top: 15px;
-  column-gap: 35px;
-}

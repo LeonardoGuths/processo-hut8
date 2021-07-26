@@ -1,10 +1,13 @@
 import React from 'react'
 import './styles.css'
-import {Link} from 'react-router-dom'
+import {Link, useRouteMatch} from 'react-router-dom'
 
 const Course = props => {
+
+    let rota = useRouteMatch();
+
     return (
-        <Link to={`/courses/${props.content.id}`}>
+        <Link to={`${rota.url}/${props.content.id}`}>
         <div className="Course">
             <div className="ImageIcon">
                 <img src={props.content.image} height="140" width="235" alt={props.content.course}></img>

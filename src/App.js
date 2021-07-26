@@ -3,7 +3,7 @@ import './App.css';
 import Sidebar from './components/Sidebar'
 import Resumo from './components/Resumo'
 import Activity from './components/Activity'
-import Course from './components/Course'
+import Courses from './components/Courses'
 import { getUser , getCourses } from './services/requests'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 
@@ -78,10 +78,7 @@ const App = () => {
       path: '/courses',
       main: () =>
       <div className="Content">
-        <h1>Meus cursos</h1>
-        <div className="MeusCursos">
-          {courses?.map(info => <Course content={info}/>)}
-        </div>
+        <Courses content={courses}/>
       </div>
     }
   ]

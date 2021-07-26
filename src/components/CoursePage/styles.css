@@ -1,0 +1,24 @@
+.CoursePage {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.CoursePage .Cabecalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 100px;
+}
+
+.CoursePage .NomeTurma h1{
+    color: #555555;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.CoursePage .NomeTurma h2{
+    color: #737373;
+    font-weight: bold;
+    font-size: 16px;
+}
