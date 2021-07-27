@@ -6,3 +6,16 @@
     margin: 5px;
     column-gap: 35px;
 }
+
+@media (max-width: 1450px) {
+    .Resumo .Itens {
+        column-gap: 5px;
+    }
+}
+
+@media (max-width: 1250px) {
+    .Resumo .Itens {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+}

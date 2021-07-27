@@ -59,7 +59,7 @@ const CoursePage = () => {
                 <Resumo content={resumoCurso}/>
             </div>
             <h1>Próximas atividades</h1>
-            <div className="ProximasAtividades">
+            <div className="ProximasAtividade">
                 {course?.nextActivities?.map(info => <Activity content={info}/>)}
             </div>
         </div>

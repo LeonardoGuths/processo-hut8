@@ -5,3 +5,10 @@
     margin-top: 15px;
     column-gap: 35px;
   }
+
+  @media (max-width: 900px) {
+    .MeusCursos {
+      flex-direction: column-reverse;
+      row-gap: 15px;
+    }
+  }

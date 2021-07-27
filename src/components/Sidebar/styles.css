@@ -48,3 +48,36 @@
     color: #727272;
     font-size: 22px;
 }
+
+@media (max-width: 1450px) {
+    .Sidebar .Container {
+        padding: 5px;
+    }
+    
+    .Sidebar .Container .Links {
+        padding: 5px;
+        align-items: center;
+    }
+}
+
+@media (max-width: 650px) {
+    .Sidebar .Container {
+      padding: 10px;
+    }
+    .Sidebar h1 {
+        font-size: 16px;
+    }
+    .Sidebar h2 {
+        font-size: 11px;
+    }
+    .Sidebar img {
+        max-width: 80px;
+    }
+    .Sidebar .Container .ProfileInfo {
+        padding: 5px;
+    }
+    .Sidebar .Container .Links {
+        padding: 5px;
+        margin-top: 25px;
+    }
+}

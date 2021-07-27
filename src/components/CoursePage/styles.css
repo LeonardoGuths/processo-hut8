@@ -11,14 +11,28 @@
     column-gap: 100px;
 }
 
-.CoursePage .NomeTurma h1{
+.CoursePage .NomeTurma h1 {
     color: #555555;
     font-weight: bold;
     font-size: 26px;
 }
 
-.CoursePage .NomeTurma h2{
+.CoursePage .NomeTurma h2 {
     color: #737373;
     font-weight: bold;
     font-size: 16px;
 }
+
+.CoursePage .ProximasAtividade {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    margin-top: 15px;
+    column-gap: 35px;
+}
+
+@media (max-width: 900px) {
+    .CoursePage .Cabecalho {
+        column-gap: 5px;
+    }
+  }
