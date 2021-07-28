@@ -9,7 +9,7 @@
 
 @media (max-width: 1450px) {
     .Resumo .Itens {
-        column-gap: 5px;
+        column-gap: 10px;
     }
 }
 
