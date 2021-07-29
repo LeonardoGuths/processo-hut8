@@ -61,7 +61,7 @@
   }
 }
 
-@media (max-width: 1220px) {
+@media (max-width: 1240px) {
   .Container .Content .Resumo {
     margin-bottom: 10px;
   }
@@ -81,5 +81,4 @@
   .Container .Content {
     margin: 10px;
   }
-  
 }

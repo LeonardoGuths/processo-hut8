@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    column-gap: 100px;
+    column-gap: 10px;
 }
 
 .CoursePage .NomeTurma h1 {
@@ -30,9 +30,3 @@
     margin-top: 15px;
     column-gap: 35px;
 }
-
-@media (max-width: 900px) {
-    .CoursePage .Cabecalho {
-        column-gap: 5px;
-    }
-  }
