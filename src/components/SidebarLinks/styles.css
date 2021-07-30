@@ -26,16 +26,7 @@
     .SidebarLinks .sidebar-navlink {
         font-size: 15px;
     }
-    .Sidebar .sidebar-navlink-active {
+    .SidebarLinks .sidebar-navlink-active {
         font-size: 15px;
-    }
-    .Sidebar img {
-        max-width: 80px;
-    }
-    .Sidebar .Container .ProfileInfo {
-        padding: 5px;
-    }
-    .Sidebar .Container .Links {
-        padding: 5px;
     }
 }

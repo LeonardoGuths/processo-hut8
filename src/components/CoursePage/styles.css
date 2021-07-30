@@ -23,9 +23,10 @@
     font-size: 16px;
 }
 
-.CoursePage .ProximasAtividade {
+.CoursePage .ProximasAtividades {
     display: flex;
     flex-direction: row;
+    flex-flow: row wrap;
     padding: 5px;
     margin-top: 15px;
     column-gap: 35px;
