@@ -19,6 +19,7 @@
     font-weight: bold;
     font-size: 18px;
     margin: 5px;
+    pointer-events: none;
 }
 
 @media (max-width: 650px) {
